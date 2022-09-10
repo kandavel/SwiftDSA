@@ -15,5 +15,8 @@
         <page name='Closure'/>
         <page name='Swift'/>
         <page name='CreateLinkedList'/>
+        <page name='RemodeDuplicatedinArray'/>
+        <page name='IntersectionOfTwoLinkedList'/>
+        <page name='FibonocciSeries'/>
     </pages>
 </playground>
