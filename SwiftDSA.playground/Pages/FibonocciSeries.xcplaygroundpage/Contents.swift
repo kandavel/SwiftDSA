@@ -21,3 +21,6 @@ func enterTheFibonocciSeriesNumber(number : Int) -> [Int] {
     return fibnocciArray
 }
 enterTheFibonocciSeriesNumber(number: 10)
+
+
+

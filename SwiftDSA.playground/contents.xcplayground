@@ -18,5 +18,7 @@
         <page name='RemodeDuplicatedinArray'/>
         <page name='IntersectionOfTwoLinkedList'/>
         <page name='FibonocciSeries'/>
+        <page name='ClaimUpstairs'/>
+        <page name='MaximumProfit'/>
     </pages>
 </playground>
