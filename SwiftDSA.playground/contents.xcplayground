@@ -20,5 +20,8 @@
         <page name='FibonocciSeries'/>
         <page name='ClaimUpstairs'/>
         <page name='MaximumProfit'/>
+        <page name='ValidPalindrome'/>
+        <page name='PhonePe'/>
+        <page name='MissingRanges'/>
     </pages>
 </playground>
