@@ -5,18 +5,41 @@ import Foundation
 var greeting = "Hello, playground"
 
 //: [Next](@next)
-func missingRangesInArray(array : [Int]) -> [String] {
+func findMissingRanges(nums: [Int],lower: Int,upper: Int) -> [String] {
+    var array = nums
     var rangeStringList  : [String] = []
-    let count  =  array.count - 1
-    for i in 0 ..< count {
-        let currentValue  =  array[i]
-        let nextValue  = array[i + 1]
-        let diff  = nextValue - currentValue
-        if diff > 1 {
-            print("MinimumRange :: \(currentValue + 1) --> MaximumRange :: \(nextValue - 1)")
-            rangeStringList.append("\(currentValue + 1)-->\(nextValue - 1)")
+    if !(array.isEmpty) {
+        let count  =  array.count - 1
+        for i in 0 ..< count {
+            let currentValue  =  array[i]
+            let nextValue  = array[i + 1]
+            let diff  = nextValue - currentValue
+            if diff > 1 {
+                let currentUpdatedValue = currentValue + 1
+                let nextUpdatedValue =  nextValue - 1
+                print("MinimumRange :: \(currentUpdatedValue) -> MaximumRange :: \(nextUpdatedValue)")
+                if currentUpdatedValue ==  nextUpdatedValue {
+                    rangeStringList.append("\(currentUpdatedValue)")
+                }
+                else {
+                    rangeStringList.append("\(currentUpdatedValue)->\(nextUpdatedValue)")
+                }
+                
+            }
+        }
+        
+        if upper != array[count]     {
+            rangeStringList.append("\(array[count]  + 1)->\(upper)")
+        }
+    }
+    else {
+        if lower == upper &&  upper > 0 && lower > 0 {
+            rangeStringList.append("\(lower)")
+        }
+        else {
+            rangeStringList.append("\(lower)->\(upper)")
         }
     }
     return  rangeStringList
 }
-missingRangesInArray(array :  [0,1,3,50,75])
+findMissingRanges(nums: [], lower: -2, upper: -1)

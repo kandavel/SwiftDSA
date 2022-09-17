@@ -23,5 +23,10 @@
         <page name='ValidPalindrome'/>
         <page name='PhonePe'/>
         <page name='MissingRanges'/>
+        <page name='MissingNumberInArray'/>
+        <page name='MakeSumArray'/>
+        <page name='MoveZeroToRightSide'/>
+        <page name='ValidParenthesis'/>
+        <page name='FindExcelColumn'/>
     </pages>
 </playground>
