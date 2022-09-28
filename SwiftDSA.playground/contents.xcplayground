@@ -28,5 +28,10 @@
         <page name='MoveZeroToRightSide'/>
         <page name='ValidParenthesis'/>
         <page name='FindExcelColumn'/>
+        <page name='MajorityElement'/>
+        <page name='RichestCustomerWealth'/>
+        <page name='IslandMatrix'/>
+        <page name='ReshapeMatrix'/>
+        <page name='TransposeMatrix'/>
     </pages>
 </playground>
