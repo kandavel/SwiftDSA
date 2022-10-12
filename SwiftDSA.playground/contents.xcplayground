@@ -33,5 +33,8 @@
         <page name='IslandMatrix'/>
         <page name='ReshapeMatrix'/>
         <page name='TransposeMatrix'/>
+        <page name='Matrix'/>
+        <page name='FlippingAnImage'/>
+        <page name='3Sum'/>
     </pages>
 </playground>
