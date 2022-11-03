@@ -36,5 +36,8 @@
         <page name='Matrix'/>
         <page name='FlippingAnImage'/>
         <page name='3Sum'/>
+        <page name='PascalTriangle'/>
+        <page name='RotateString'/>
+        <page name='MostCommonWord'/>
     </pages>
 </playground>
