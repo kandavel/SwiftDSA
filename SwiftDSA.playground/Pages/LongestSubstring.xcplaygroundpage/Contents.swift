@@ -77,3 +77,24 @@ let testString3 = "pwwkew"
 //print("Result is ", findLongestSubstring(testString1))
 //print("Result is ", findLongestSubstring(testString2))
 print("Result is ", findLongestSubstring(testString3))
+
+
+func lengthOfLongestSubstring(_ s: String) -> Int {
+       guard !s.isEmpty else { return 0 }
+       var dict: [String.Element: Int] = [:]
+       var maxContinues = 0
+       var start = 0
+       
+       for (end, c) in s.enumerated() {
+           if let oldIndex = dict[c] {
+               dict[c] = end
+               start = max(oldIndex + 1, start)
+           } else {
+               dict[c] = end
+           }
+           maxContinues = max(end - start + 1, maxContinues)
+       }
+       return maxContinues
+    }
+
+lengthOfLongestSubstring("pwwke")

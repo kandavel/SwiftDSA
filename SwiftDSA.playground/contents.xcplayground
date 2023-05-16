@@ -39,5 +39,11 @@
         <page name='PascalTriangle'/>
         <page name='RotateString'/>
         <page name='MostCommonWord'/>
+        <page name='MergeSort'/>
+        <page name='intToRoman'/>
+        <page name='GCD'/>
+        <page name='swapNodesInLinkedList'/>
+        <page name='RotateNodes'/>
+        <page name='SearchInSortedArray'/>
     </pages>
 </playground>
